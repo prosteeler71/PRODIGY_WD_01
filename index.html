@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Contact</a>
+      </nav>
+    </header>
+  </body>
+  <div class="bg-slate-900 h-screen text-white p-5 text-xl">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse qui
+      eligendi aliquam nemo ipsam facere. Assumenda autem natus impedit harum
+      sunt cum, quos, vero at facilis tempora iusto. Beatae, praesentium.
+    </p>
+  </div>
+  <script>
+    document.addEventListener("scroll", () => {
+      const header = document.querySelector("header");
+      if (window.scrollY > 0) {
+        header.classList.add("scrolled");
+      } else {
+        header.classList.remove("scrolled");
+      }
+    });
+  </script>
+</html>
